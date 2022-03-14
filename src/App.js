@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+//import { CustomThemeContext } from './Theme/CustomThemeProvider'
+import Footer from './components/Footer/'
+import Header from './components/Header'
+import CarouselSection from './components/Carousel/CarouselSection'
+import Newsletter from './components/Newsletter'
+import CodeSection from './components/Code'
+import OrderButton from './components/Button'
+import Cards from './components/Cards'
+import TwoCards from './components/TwoCards'
 
-function App() {
+const App = () => {
+  /*  const classes = useStyles()
+  const { currentTheme, setTheme } = useContext(CustomThemeContext)
+  const isDark = Boolean(currentTheme === 'dark') */
+
+  /*   const handleThemeChange = (event) => {
+    const { checked } = event.target
+    if (checked) {
+      setTheme('dark')
+    } else {
+      setTheme('normal')
+    }
+  } */
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <CarouselSection />
+      <TwoCards />
+      <Cards />
+      <OrderButton />
+      <Newsletter />
+      <CodeSection />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
