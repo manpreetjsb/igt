@@ -14,15 +14,6 @@ export const MenuHolder = withTheme(styled('div')`
   }
 `)
 
-export const MainContainer = styled(Container)({
-  backgroundColor: '#00347a',
-  color: 'white',
-  //height: '55px',
-  position: 'relative',
-  margin: 0,
-  padding: '15px 0',
-})
-
 export const BlackBox = styled(Container)({
   backgroundColor: '#000',
   height: '8px',

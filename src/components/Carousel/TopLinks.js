@@ -1,29 +1,34 @@
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemText from '@mui/material/ListItemText'
-import Grid from '@mui/material/Grid'
+import Hidden from '@mui/material/Hidden'
+import Box from '@mui/material/Box'
+import { LinkWrapper } from './CaroiselSection.styles'
 
 const TopLinks = () => {
   return (
-    <Grid container display='flex'>
-      <Grid item xs={6}></Grid>
-      <Grid item xs={6}>
-        <List
-          sx={{
-            width: '100%',
-            maxWidth: 360,
-            maxHeight: 300,
-            textAlign: 'right',
-          }}
-        >
-          <ListItem>
-            <ListItemText>Link 1</ListItemText>
-            <ListItemText>Link 2</ListItemText>
-            <ListItemText>Link 3</ListItemText>
-          </ListItem>
-        </List>
-      </Grid>
-    </Grid>
+    <>
+      <Hidden smDown>
+        <Box component='div'>
+          <LinkWrapper
+            component='nav'
+            variant='body2'
+            noWrap
+            aria-label='nav'
+            data-testid='menu2'
+          >
+            <ul>
+              <li role='listitem'>
+                <a href='#'> Link 1</a>
+              </li>
+              <li role='listitem'>
+                <a href='#'> Link 2</a>
+              </li>
+              <li role='listitem'>
+                <a href='#'>Link 3</a>
+              </li>
+            </ul>
+          </LinkWrapper>
+        </Box>
+      </Hidden>
+    </>
   )
 }
 

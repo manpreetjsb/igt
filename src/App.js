@@ -9,6 +9,8 @@ import OrderButton from './components/Button'
 import Cards from './components/Cards'
 import TwoCards from './components/TwoCards'
 
+import { BgBlueColor } from './App.styles'
+
 const App = () => {
   /*  const classes = useStyles()
   const { currentTheme, setTheme } = useContext(CustomThemeContext)
@@ -26,9 +28,11 @@ const App = () => {
     <div>
       <Header />
       <CarouselSection />
-      <TwoCards />
-      <Cards />
-      <OrderButton />
+      <BgBlueColor>
+        <TwoCards />
+        <Cards />
+        <OrderButton />
+      </BgBlueColor>
       <Newsletter />
       <CodeSection />
       <Footer />

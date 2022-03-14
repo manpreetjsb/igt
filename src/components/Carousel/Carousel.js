@@ -18,14 +18,14 @@ const CarouselComponent = () => {
   return (
     <Carousel
       animation='slide'
-      sx={{ height: '100%', width: '100%', borderRadius: '10px' }}
+      sx={{ height: '350px', width: '100%', borderRadius: '10px' }}
     >
-      {items.map((product) => (
+      {items.map((item) => (
         <img
-          key={product.image}
-          sx={{ height: '100vw', width: '100vw', borderRadius: '10px' }}
-          src={product.image}
-          alt={product.name}
+          key={item.image}
+          //sx={{ height: '100%', width: '100%', borderRadius: '10px' }}
+          src={item.image}
+          alt={item.name}
         ></img>
       ))}
     </Carousel>

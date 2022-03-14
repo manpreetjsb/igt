@@ -4,13 +4,14 @@ import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
+import { TwoNewsSection } from './TwoCards.styles'
 
 import { CardStyle } from '../Cards/Card.styles'
 
 const TwoCards = () => {
   return (
     <Container maxWidth='lg'>
-      <Grid container display='flex' spacing={2} my={5}>
+      <TwoNewsSection container display='flex' spacing={2}>
         <Grid item sm={6} xs={12}>
           <Card variant='outlined'>
             <CardStyle sx={{ textAlign: 'center' }}>
@@ -52,7 +53,7 @@ const TwoCards = () => {
             </Box>
           </Card>
         </Grid>
-      </Grid>
+      </TwoNewsSection>
     </Container>
   )
 }
