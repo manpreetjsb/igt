@@ -12,7 +12,6 @@ import TwoCards from './components/TwoCards'
 import { BgBlueColor } from './App.styles'
 
 const App = () => {
-  //const classes = useStyles()
   const { currentTheme, setTheme } = useContext(CustomThemeContext)
   const isDark = Boolean(currentTheme === 'dark')
 

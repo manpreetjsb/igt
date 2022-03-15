@@ -89,7 +89,6 @@ export const HeaderBar = withTheme(
 export const Nav = withTheme(styled('nav')`
   display: flex;
   justify-content: center;
-  //margin: 20px 0;
   ${(props) => props.theme.breakpoints.down('sm')} {
     width: 100%;
   }

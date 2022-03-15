@@ -52,7 +52,7 @@ const Header = (props) => {
                       </Typography>
                     </ListItemAlign>
                     <ListItemAlign>
-                      <Button variant='contained'>Theme 1</Button>
+                      <Button variant='contained'>Link 2</Button>
                     </ListItemAlign>
                     <ListItemAlign>
                       {/* <Button variant='contained'>Theme 2</Button> */}

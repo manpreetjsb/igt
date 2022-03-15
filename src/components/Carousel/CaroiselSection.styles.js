@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography'
 export const MainContainer = styled(Container)({
   backgroundColor: '#00347a',
   color: 'white',
-  //height: '55px',
   position: 'relative',
   margin: 0,
   padding: '15px 0',
