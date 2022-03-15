@@ -1,5 +1,5 @@
-import React from 'react'
-//import { CustomThemeContext } from './Theme/CustomThemeProvider'
+import React, { useContext } from 'react'
+import { CustomThemeContext } from './Theme/CustomThemeProvider'
 import Footer from './components/Footer/'
 import Header from './components/Header'
 import CarouselSection from './components/Carousel/CarouselSection'
@@ -12,21 +12,21 @@ import TwoCards from './components/TwoCards'
 import { BgBlueColor } from './App.styles'
 
 const App = () => {
-  /*  const classes = useStyles()
+  //const classes = useStyles()
   const { currentTheme, setTheme } = useContext(CustomThemeContext)
-  const isDark = Boolean(currentTheme === 'dark') */
+  const isDark = Boolean(currentTheme === 'dark')
 
-  /*   const handleThemeChange = (event) => {
+  const handleThemeChange = (event) => {
     const { checked } = event.target
     if (checked) {
       setTheme('dark')
     } else {
       setTheme('normal')
     }
-  } */
+  }
   return (
     <div>
-      <Header />
+      <Header isDark={isDark} onclick={handleThemeChange} />
       <CarouselSection />
       <BgBlueColor>
         <TwoCards />

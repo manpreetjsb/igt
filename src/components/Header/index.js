@@ -5,7 +5,8 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
-
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Switch from '@mui/material/Switch'
 import {
   HeaderBar,
   ListItemAlign,
@@ -18,7 +19,7 @@ import {
   LogoText,
 } from './Header.styles'
 
-const Header = () => {
+const Header = (props) => {
   const [open, setOpen] = useState(false)
   return (
     <>
@@ -54,7 +55,16 @@ const Header = () => {
                       <Button variant='contained'>Theme 1</Button>
                     </ListItemAlign>
                     <ListItemAlign>
-                      <Button variant='contained'>Theme 2</Button>
+                      {/* <Button variant='contained'>Theme 2</Button> */}
+                      <FormControlLabel
+                        control={
+                          <Switch
+                            checked={props.isDark}
+                            onChange={props.onclick}
+                          />
+                        }
+                        label='Theme'
+                      />
                     </ListItemAlign>
                   </HeaderBar>
                 </Nav>
